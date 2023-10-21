@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Design</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: hsl(212, 45%, 89%);
+            width: 100%;
+            height: 700px;
+            font-family: cursive;
+            /* background: linear-gradient(to right, #aa076b, #61045f); */
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .container {
+            margin-top: 60px;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            width: 335px;
+            height: 515px;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            /* border: 3px solid black; */
+        }
+
+        img {
+            margin-top: 20px;
+            width: 300px;
+            height: 283px;
+            border-radius: 10px;
+            /* box-shadow: 0 45px 65px rgba(0, 0, 0, 0.50), 0 35px 22px rgba(0, 0, 0, 0.16); */
+        }
+
+        .text {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .heading {
+            margin-top: 100px;
+            font-size: 24px;
+        }
+
+        .detail {
+            font-size: 17px;
+            letter-spacing: -1px;
+            color: #7d889e;
+            padding-inline: 19px;
+        }
+
+        .myqr {
+            position: relative;
+            z-index: 1;
+            top: 62px;
+            border-radius: 0px;
+            width: 168px;
+            height: 159px;
+            filter: drop-shadow(2px 4px 6px black);
+        }
+
+        .qr {
+            position: absolute;
+        }
+
+        footer {
+            width: 100%;
+            /* background: linear-gradient(to right, #aa076b, #61045f); */
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="myqr" src="QR.png" alt="image">
+        <img class="qr" src="image-qr-code.png" alt="qr-image">
+        <div class="text">
+            <h2 class="heading">Improve your front-end skills by building projects</h2>
+            <p class="detail">Scan the QR code to visit Aliyan Ahmad Repository and take your coding skills to the
+                next
+                level
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        ❤️Aliyan Ahmad❤️
+    </footer>
+</body>
+
+</html>
